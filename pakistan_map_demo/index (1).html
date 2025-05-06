@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Map using jVectorMap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/jqvmap.min.css">
+</head>
+<body>
+    <h1 style="text-align:center;">Implement World Map using jVectorMap</h1>
+    <div id="vmap" style="margin:0 auto;width:80%;height:520px;"></div>
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/jquery.vmap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/maps/jquery.vmap.world.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#vmap').vectorMap({
+                map: 'world_en',
+                backgroundColor: '#a4bfdd',
+                color: '#c6d7f1',
+                hoverColor: '#c0d3e8',
+                selectedColor: '#f2a9b8',
+                enableZoom: true,
+                showTooltip: true,
+            });
+        });
+    </script>
+</body>
+</html>
